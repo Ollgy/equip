@@ -1,0 +1,12 @@
+@import '../../const/styles/stylesConst.scss';
+
+.app-section {
+  flex: 1;
+  width: 50%;
+  border: 2px solid $border;
+  border-right: none; 
+  
+  &:last-of-type {
+    border-right: 2px solid $border;
+  }
+}

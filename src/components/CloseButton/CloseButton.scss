@@ -1,0 +1,37 @@
+@import '../../const/styles/stylesConst.scss';
+
+.button-close {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: $empty;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50%;
+    width: 70%;
+    height: 10%;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+
+  &:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &:hover {
+    background-color: darken($color: $empty, $amount: 10);
+  }
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.css"],"names":[],"mappings":"AAAA,KACE,iBAAA,QACA,kBAAA,KAAA,UAAA,KAAkB,KAGlB,iBAAA,KAAyB,MAGzB,MAAA,KACA,OAAA","file":"../main.css","sourcesContent":["body {\n  background-color: lightgray;\n  transform: none; }\n\n.app {\n  background-color: grey; }\n\n.line {\n  width: 50px;\n  height: 50px; }\n"]}

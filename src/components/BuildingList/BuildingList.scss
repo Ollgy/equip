@@ -1,0 +1,69 @@
+@import '../../const/styles/stylesConst.scss';
+
+.buildings {
+  width: 100%;
+  padding: 15px;
+
+  &__list {
+    padding-left: 15px;
+  } 
+
+  &__item {
+    font-weight: 400;
+    white-space: nowrap;
+
+    &:before {
+      content: '→';
+    }
+
+    &--node {
+      font-weight: 700;
+
+      &:before {
+        content: '•';
+      }
+    }
+
+    &--active > .buildings__text {
+      background-color: $header;
+      &:hover {
+        background-color: $header;
+      }
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    max-width: 90%;
+    vertical-align: top;
+    padding-right: 12px;
+    padding-left: 12px;
+    white-space: normal;
+    transition: background-color 0.5s; 
+    cursor: pointer;
+    
+    &:hover {
+      background-color: rgba($header, 0.5);
+    }
+  }
+
+  &__status {
+    display: inline-block;
+    width: 25px;
+
+    &:before {
+      position: relative;
+      left: 5px;
+    }
+
+    &--full:before {
+      content: '🛠';
+      color: $baseDark;
+    }
+    
+    &--empty:before {
+      content: '🛇';
+      color: $empty;
+    }
+  }
+}

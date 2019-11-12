@@ -1,0 +1,47 @@
+@import '../../const/styles/stylesConst.scss';
+
+html, body, #root {
+  height: 100%
+}
+
+body {
+  font-family: 'Roboto', 'Arial';
+  font-size: 16px;
+  font-weight:400;
+  line-height: 1.42;
+  color: #000000;
+}
+
+body, ul {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  background-color: $appbkg;
+  background-image: url('../../assets/img/electronics.svg')
+}
+
+.app {
+  width: 100%;
+  max-width: 1000px;
+  padding-bottom: 45px;
+}
+
+.app__section-block {
+  display: flex;
+  min-height: 50%;
+  background-color: $baseLight;
+}

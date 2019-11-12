@@ -1,0 +1,23 @@
+@import '../../const/styles/stylesConst.scss';
+
+.inputWrap {
+  position: relative;
+  display: inline-block;
+  width: 190px;
+}
+
+.input {
+  height: 35px;
+  width: 100%;
+  padding: 4px 20px;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid $appbkg;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+
+  &:focus {
+    border-color: $header;
+  }
+}

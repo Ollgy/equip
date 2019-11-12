@@ -1,0 +1,25 @@
+.equipment {
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 15px;
+    font-size: 18px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 2px;
+    & > button {
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  }
+}

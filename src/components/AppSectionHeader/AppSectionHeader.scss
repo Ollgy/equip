@@ -1,0 +1,23 @@
+@import '../../const/styles/stylesConst.scss';
+
+.app-section__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  background-color: $header;
+  border-bottom: 2px solid $border;
+
+  &-icon {
+    width: 25px;
+    height: 25px;
+    fill: $baseDark;
+  }
+
+  &-title {
+    font-size: 24px;
+    font-weight: 500;
+    padding-left: 10px;
+  }
+}

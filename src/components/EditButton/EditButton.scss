@@ -1,0 +1,25 @@
+@import '../../const/styles/stylesConst.scss';
+
+.button-edit {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: $header;
+  border: 2px solid $baseDark;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+
+  &:after {
+    content: '✎';
+    position: absolute;
+    top: -8px;
+    left: -5px;
+    transform: scale(1.8);
+    color: black;
+  }
+
+  &:hover:after {
+    color: $empty
+  }
+}

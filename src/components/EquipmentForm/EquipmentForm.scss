@@ -1,0 +1,32 @@
+.form-container {
+  margin-top: 20px;
+}
+
+.form-wrap {
+  position: relative;
+  border: 2px solid lightgrey;
+  padding: 30px 20px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.form-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.form {
+  &__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__buttons {
+    padding: 10px 10px 0;
+    text-align: center;
+  }
+}
