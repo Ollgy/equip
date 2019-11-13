@@ -185,7 +185,9 @@ class App extends PureComponent {
 
     return <div className='wrapper'>
       <main className='app'>
-        <AppTitle children={textConst.title}/>
+        <div className='app__title-block'>
+          <AppTitle children={textConst.title}/>
+        </div>
         {
           !buildings.length
             ? <Preloader/>

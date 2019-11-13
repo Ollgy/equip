@@ -38,10 +38,15 @@ ul {
   width: 100%;
   max-width: 1000px;
   padding-bottom: 45px;
+  padding-top: 45px;  
 }
 
 .app__section-block {
   display: flex;
   min-height: 50%;
   background-color: $baseLight;
+}
+
+.app__title-block {
+  margin-bottom: 20px;
 }
